@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
     modal.style.display = 'none';
   
     cardForm.addEventListener('submit', function (e) {
-      e.preventDefault();
+      e.preventDefault(); //pprevents form submission 
   
       // 🚨 Get input values
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = ;
-      const courseNameInput = ; 
+      const personalMessageInput = document.getElementById('personalMessage') ;
+      const courseNameInput = document.getElementById('courseName'); 
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
